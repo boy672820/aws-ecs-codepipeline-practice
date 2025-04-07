@@ -11,7 +11,10 @@ export class ApiController {
   }
 
   @Get('health')
-  health(): string {
-    return 'ok';
+  health() {
+    return {
+      status: 'ok',
+      timestamp: new Date().toISOString(),
+    };
   }
 }
