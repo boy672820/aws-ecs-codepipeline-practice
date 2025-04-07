@@ -33,4 +33,4 @@ ENV PORT=3000
 EXPOSE 3000
 
 # 애플리케이션 실행
-CMD ["node", "dist/apps/ecs-with-codepipeline-practice/main"]
+CMD ["node", "dist/apps/api/main"]

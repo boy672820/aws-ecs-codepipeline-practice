@@ -9,7 +9,7 @@ const stack = new CdkStack(app, 'EcsWithCodePipelinePracticeStack', {});
 new CicdPipelineStack(app, 'EcsWithCodePipelinePracticeCicdStack', {
   stack,
   githubOwner: 'boy672820',
-  githubRepo: 'ecs-with-codepipeline-practice',
+  githubRepo: 'aws-ecs-with-codepipeline-practice',
   githubBranch: 'main',
   notificationEmail: 'boy672820@gmail.com',
 });

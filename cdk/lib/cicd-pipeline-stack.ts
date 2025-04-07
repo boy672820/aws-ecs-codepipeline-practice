@@ -147,7 +147,7 @@ export class CicdPipelineStack extends cdk.Stack {
           repo: props.githubRepo,
           branch: props.githubBranch,
           oauthToken: cdk.SecretValue.secretsManager(
-            'dev/ecs-codepipeline-practice/github-token',
+            'dev/ecs-codepipeline-practice/github-token-v2',
           ),
           output: sourceOutput,
           trigger: codepipeline_actions.GitHubTrigger.WEBHOOK,
