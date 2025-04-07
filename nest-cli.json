@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/ecs-with-codepipeline-practice/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/ecs-with-codepipeline-practice/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/ecs-with-codepipeline-practice",
+  "projects": {
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "ecs-with-codepipeline-practice": {
+      "type": "application",
+      "root": "apps/ecs-with-codepipeline-practice",
+      "entryFile": "main",
+      "sourceRoot": "apps/ecs-with-codepipeline-practice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ecs-with-codepipeline-practice/tsconfig.app.json"
+      }
+    }
+  }
+}
