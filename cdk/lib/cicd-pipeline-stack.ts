@@ -186,7 +186,7 @@ export class CicdPipelineStack extends cdk.Stack {
       this,
       'PipelineFailedAlarm',
       {
-        alarmName: 'EcsWithCodePipelinePracticeApiPipelineFailed',
+        alarmName: 'EcsCodePipelinePracticeApiPipelineFailed',
         metric: new cloudwatch.Metric({
           namespace: 'AWS/CodePipeline',
           metricName: 'FailedPipeline',

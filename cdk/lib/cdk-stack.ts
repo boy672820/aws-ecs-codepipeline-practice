@@ -19,7 +19,7 @@ export class CdkStack extends cdk.Stack {
     super(scope, id, props);
 
     // 1. VPC 설정 - 기본 VPC 사용
-    this.vpc = new ec2.Vpc(this, 'EcsWithCodePipelinePracticeVpc', {
+    this.vpc = new ec2.Vpc(this, 'EcsCodePipelinePracticeVpc', {
       maxAzs: 2,
     });
 
